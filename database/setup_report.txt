@@ -1,0 +1,31 @@
+=================================================================
+SMART LOST-AND-FOUND SYSTEM - DATABASE SETUP EXECUTION REPORT
+Execution Time : Thu Nov 05 07:50:31 IST 2026
+Database       : smart_lost_found @ localhost:3306
+=================================================================
+
+MySQL Server Connection: SUCCESS (8.4.13)
+JDBC Configuration: Saved to config/db.properties
+Schema Execution (schema.sql): SUCCESS
+  Tables created: USERS, LOST_ITEMS, FOUND_ITEMS, CLAIMS
+Sample Data Population (sample_data.sql): SUCCESS
+  Table claims            : 3 rows
+  Table found_items       : 4 rows
+  Table lost_items        : 4 rows
+  Table users             : 5 rows
+Table Verification: 4/4 tables present - SUCCESS
+CRUD Test 1 [CREATE User]: SUCCESS - ID 12
+CRUD Test 2 [READ User]: SUCCESS
+CRUD Test 3 [UPDATE User]: SUCCESS
+CRUD Test 4 [CREATE Lost Item]: SUCCESS - ID 10
+CRUD Test 5 [CREATE Found Item]: SUCCESS - ID 10
+CRUD Test 6 [CREATE Claim]: SUCCESS - ID 10
+CRUD Test 7 [ACID Transaction - Approve Claim]: SUCCESS
+CRUD Test 8 [CHECK Constraint chk_claim_single_item]: SUCCESS
+CRUD Test 9 [DELETE Cascade Cleanup]: SUCCESS
+
+--- All 9 CRUD/Transaction Tests: PASSED ---
+
+=================================================================
+RESULT: ALL OPERATIONS AND CONSTRAINTS VERIFIED -- 100% SUCCESS
+=================================================================

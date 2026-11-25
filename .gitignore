@@ -1,0 +1,16 @@
+# Build artifacts
+bin/
+out/
+build/
+target/
+*.class
+
+# Sensitive local database credentials
+config/db.properties
+
+# Cleanup backups and temporary files
+.cleanup_backup/
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

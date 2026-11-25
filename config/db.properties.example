@@ -1,0 +1,11 @@
+# =======================================================
+# Smart Lost-and-Found Management System
+# Database Configuration Template
+# =======================================================
+# Copy this file to 'config/db.properties' and fill in your MySQL credentials.
+# WARNING: Never commit 'config/db.properties' containing real credentials to version control.
+
+db.url=jdbc:mysql://localhost:3306/smart_lost_found?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+db.user=root
+db.password=YOUR_MYSQL_ROOT_PASSWORD_HERE
+db.driver=com.mysql.cj.jdbc.Driver
